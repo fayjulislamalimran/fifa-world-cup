@@ -1,0 +1,293 @@
+/* poppins font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+}
+
+/* Header start  */
+.header {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    background: #161616;
+    border-radius: 30px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.banner-img {
+    padding-top: 100px;
+
+}
+
+/* This is a button color red */
+.button {
+    background-color: #DD0000;
+    width: 187px;
+    height: 56px;
+    padding: 16px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+
+}
+
+/*This is a animation */
+.animation {
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    from {
+        background-color: rgb(216, 27, 58);
+    }
+
+    to {
+        background-color: rgb(43, 230, 102);
+    }
+}
+
+/* This is a section */
+section {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+
+/* This is a group itm */
+
+.group-itm {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    width: 900px;
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+}
+
+.itm {
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+.group-itm div a {
+    text-decoration: none;
+    color: black;
+}
+
+/* This is a all blogs display grid */
+.all-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-right: 5%;
+}
+
+.blog-btn {
+    background-color: green !important;
+}
+
+.blog-btn a {
+    color: #fff !important;
+}
+
+.blogs {
+    box-shadow: 5px 5px 5px 5px #aaaaaa;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.blogs img {
+    width: 100%;
+    border: 5px;
+}
+
+
+
+.h6 .fa-solid {
+    font-size: 50px;
+}
+
+/* These view button will be center */
+main {
+    display: grid;
+    color: rgb(26, 21, 21);
+    margin-top: 100px;
+    justify-items: center;
+    border: none;
+}
+
+main a {
+    text-decoration: none;
+    background-color: #DD0000;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+main {
+    display: none;
+}
+
+
+
+/* This is a footer */
+
+footer {
+
+    text-align: center;
+    margin-top: 100px;
+    background-color: #161616;
+    color: white;
+}
+
+footer .footer-manu a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 80%;
+    color: gray;
+}
+
+footer h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-manu {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.soshal-midia {
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* 600px or Smart Phone */
+
+@media only screen and (max-width: 600px) {
+    .header {
+        width: auto;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    section {
+        width: auto;
+        display: block;
+    }
+
+    .all-blogs {
+        width: auto;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+
+    .footer-manu {
+        width: auto;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .itm-btn {
+        border: 1px solid rgb(80, 70, 70);
+    }
+
+    .group-itm {
+        width: auto;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        background-color: white;
+
+    }
+
+    .soshal-midia {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+    }
+}
+
+/* 900px or Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .header {
+        width: auto;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    section {
+        width: auto;
+        display: block;
+    }
+
+    .all-blogs {
+        width: auto;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    main {
+        width: auto;
+        display: block;
+        display: grid;
+        justify-items: center;
+    }
+
+
+    .group-itm {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        background-color: white;
+
+    }
+
+    .itm-btn {
+        border: 1px solid rgb(80, 70, 70);
+    }
+
+}
